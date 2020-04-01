@@ -1,0 +1,14 @@
+{
+  "name": "exerciseapp",
+  "version": "1.0.0",
+  "description": "A solution app for the exercise in this section",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Joseph Yang",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
