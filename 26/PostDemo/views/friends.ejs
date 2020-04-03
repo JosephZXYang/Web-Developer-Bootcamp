@@ -1,0 +1,21 @@
+<%- include("partials/header") %>
+
+<h1>
+	Your Friends List
+</h1>
+<ul>
+
+	<% for (var i = 0; i < friends.length; i ++) { %>
+		<li> <%= friends[i] %> </li>
+	<% } %>
+
+</ul>
+
+<form action="/addFriend" method="POST">
+	<input type="text" name="name" placeholder="Name goes here...">
+	<button>
+		Make a new Friend!
+	</button>
+</form>
+
+<%- include("partials/footer") %>
