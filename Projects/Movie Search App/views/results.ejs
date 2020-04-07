@@ -1,0 +1,18 @@
+<h1>
+	Search Results
+</h1>
+
+<ul>
+	<% data.Search.forEach(function(result) { %>
+		<li>
+			<strong>
+				<%= result.Title %>
+			</strong> - <%- result.Year %><br>
+			<% if (result.Poster != 'N/A') { %>
+				<img src=<%= result.Poster %>>
+			<% } %>
+		</li>
+	<% }) %>
+</ul>
+
+<a href="/">Back to Search</a> 

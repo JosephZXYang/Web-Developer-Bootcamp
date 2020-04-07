@@ -1,0 +1,27 @@
+<h1>
+	Movie Search Engine
+</h1>
+
+<form action="/results" method="GET">
+	<strong>
+		Keyword
+	</strong> (<strong>required</strong>): <input type="text" placeholder="Search Keyword" name="search"> <br><br>
+	<strong>
+		More filters
+	</strong>(optional)
+	<ul>
+		<li>Year of Release: <input type="number" name="year" min="1800" max="2020"></li>
+		<li>Type: 
+			<select name="type">
+				<option value="" selected>Select A Type</option>
+  				<option value="movie">Movie</option>
+  				<option value="series">Series</option>
+  				<option value="episode">Episode</option>
+			</select>
+		</li>
+		<li>
+			Page: <input type="number" name="page" min="1" max="100">
+		</li>
+	</ul>
+	<input type="submit">
+</form>
